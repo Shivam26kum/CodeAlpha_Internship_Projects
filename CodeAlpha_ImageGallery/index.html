@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sheet — Image Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__label">Exhibit No. 01</div>
+    <h1 class="masthead__title">Contact Sheet</h1>
+    <p class="masthead__sub">A study in light, texture and stillness — click any frame to enter the viewing room.</p>
+    <div class="masthead__filters" id="filters"></div>
+  </header>
+
+  <main class="sheet" id="sheet"></main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" id="backdrop"></div>
+    <button class="lightbox__close" id="closeBtn" aria-label="Close">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="prevBtn" aria-label="Previous">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption>
+        <span class="lightbox__index" id="lightboxIndex"></span>
+        <span class="lightbox__caption" id="lightboxCaption"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="nextBtn" aria-label="Next">›</button>
+  </div>
+
+  <footer class="footer">
+    <p>Frames advance automatically in slideshow mode — press <kbd>S</kbd> inside the viewing room.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

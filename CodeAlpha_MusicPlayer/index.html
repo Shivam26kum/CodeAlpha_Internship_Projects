@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Side A — Mixtape Player</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+
+  <div class="cassette">
+    <div class="cassette__shell">
+      <div class="cassette__label">
+        <span class="cassette__side">SIDE A</span>
+        <h1 class="cassette__title" id="trackTitle">Golden Hour</h1>
+        <p class="cassette__artist" id="trackArtist">Aiden Marsh</p>
+      </div>
+      <div class="cassette__reels">
+        <div class="reel" id="reelLeft"><div class="reel__hub"></div></div>
+        <div class="reel" id="reelRight"><div class="reel__hub"></div></div>
+      </div>
+      <div class="cassette__window"></div>
+    </div>
+  </div>
+
+  <div class="deck">
+    <div class="counter">
+      <span id="timeElapsed">0:00</span>
+      <div class="counter__track">
+        <input type="range" id="seek" min="0" max="100" value="0" step="0.1">
+        <div class="counter__fill" id="seekFill"></div>
+      </div>
+      <span id="timeTotal">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button class="ctrl-btn" id="prevBtn" aria-label="Previous track">⏮</button>
+      <button class="ctrl-btn ctrl-btn--play" id="playBtn" aria-label="Play">▶</button>
+      <button class="ctrl-btn" id="nextBtn" aria-label="Next track">⏭</button>
+      <button class="ctrl-btn ctrl-btn--toggle" id="loopBtn" aria-label="Toggle loop">⟲</button>
+    </div>
+
+    <div class="volume">
+      <span>VOL</span>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7">
+    </div>
+  </div>
+
+  <ol class="playlist" id="playlist"></ol>
+
+  <audio id="audio"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

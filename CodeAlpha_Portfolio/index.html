@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar__dot"></span>
+  <span>status: available for work</span>
+  <span class="topbar__sep">/</span>
+  <span id="clock"></span>
+</div>
+
+<header class="hero" id="top">
+  <nav class="nav">
+    <span class="nav__mark">SM</span>
+    <div class="nav__links">
+      <a href="#about">01 About</a>
+      <a href="#projects">02 Projects</a>
+      <a href="#skills">03 Skills</a>
+      <a href="#contact">04 Contact</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <div class="hero__body">
+    <p class="hero__eyebrow">Frontend Developer — building for the web</p>
+    <h1 class="hero__title">I build interfaces<br>that hold up<br>under real use.</h1>
+    <p class="hero__desc">Hi, I'm Shivam. I turn designs and rough ideas into fast, accessible, and dependable
+      front ends — HTML, CSS and JavaScript, done with care for the small details.</p>
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">View projects</a>
+      <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <p class="section__tag">/ 01</p>
+  <h2 class="section__title">About</h2>
+  <div class="about__grid">
+    <p class="about__text">
+      I'm a frontend-focused developer currently sharpening my craft through hands-on internship projects —
+      building calculators, galleries, responsive layouts and full page systems from a blank file. I care about
+      clean markup, layouts that don't break, and interfaces that feel considered rather than assembled.
+    </p>
+    <ul class="about__facts">
+      <li><span>Focus</span>HTML · CSS · JavaScript</li>
+      <li><span>Currently</span>Frontend Development Intern</li>
+      <li><span>Based</span>India</li>
+      <li><span>Available</span>Freelance &amp; internship work</li>
+    </ul>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <p class="section__tag">/ 02</p>
+  <h2 class="section__title">Projects</h2>
+
+  <article class="project">
+    <div class="project__index">LOG 001</div>
+    <div class="project__body">
+      <h3>Image Gallery</h3>
+      <p>A contact-sheet style gallery with category filters, a full lightbox viewer, keyboard navigation
+        and an auto-advancing slideshow mode.</p>
+      <div class="project__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
+    <a class="project__link" href="#" aria-label="View project">→</a>
+  </article>
+
+  <article class="project">
+    <div class="project__index">LOG 002</div>
+    <div class="project__body">
+      <h3>Desk Calculator</h3>
+      <p>A calculator styled like a physical desk device, with full arithmetic, keyboard support and a
+        live LCD-style running display.</p>
+      <div class="project__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
+    <a class="project__link" href="#" aria-label="View project">→</a>
+  </article>
+
+  <article class="project">
+    <div class="project__index">LOG 003</div>
+    <div class="project__body">
+      <h3>Music Player</h3>
+      <p>A track player with play/pause/skip, a scrubbable progress bar, volume control and a
+        looping playlist.</p>
+      <div class="project__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
+    <a class="project__link" href="#" aria-label="View project">→</a>
+  </article>
+
+  <article class="project">
+    <div class="project__index">LOG 004</div>
+    <div class="project__body">
+      <h3>Responsive Landing Page</h3>
+      <p>A media-query driven layout with a hamburger navigation, fluid type scale and a
+        component system that holds up from phone to desktop.</p>
+      <div class="project__tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+    </div>
+    <a class="project__link" href="#" aria-label="View project">→</a>
+  </article>
+</section>
+
+<section class="skills" id="skills">
+  <p class="section__tag">/ 03</p>
+  <h2 class="section__title">Skills</h2>
+  <div class="skills__grid">
+    <div class="skill"><span class="skill__label">HTML5</span><div class="skill__bar"><i style="--w:92%"></i></div></div>
+    <div class="skill"><span class="skill__label">CSS3 &amp; Layout</span><div class="skill__bar"><i style="--w:88%"></i></div></div>
+    <div class="skill"><span class="skill__label">JavaScript</span><div class="skill__bar"><i style="--w:80%"></i></div></div>
+    <div class="skill"><span class="skill__label">Responsive Design</span><div class="skill__bar"><i style="--w:85%"></i></div></div>
+    <div class="skill"><span class="skill__label">Git &amp; GitHub</span><div class="skill__bar"><i style="--w:75%"></i></div></div>
+    <div class="skill"><span class="skill__label">Bootstrap</span><div class="skill__bar"><i style="--w:78%"></i></div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <p class="section__tag">/ 04</p>
+  <h2 class="section__title">Let's work together</h2>
+  <p class="contact__desc">Have a project or an internship task in mind? I'd like to hear about it.</p>
+  <form class="contact__form" id="contactForm">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required placeholder="Your name">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="you@email.com">
+    </div>
+    <div class="field field--full">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required placeholder="What are you building?"></textarea>
+    </div>
+    <button type="submit" class="btn btn--primary">Send message</button>
+    <p class="contact__status" id="formStatus" aria-live="polite"></p>
+  </form>
+</section>
+
+<footer class="footer">
+  <span>© 2026 Shivam. Built with HTML, CSS &amp; JavaScript.</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
